@@ -3,7 +3,12 @@ package cn.hots.gateway.protocol.handler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
-// 日志处理器
+/**
+ * @description: 实现逻辑将请求返回存入mongodb
+ * @author
+ * @date 2025/4/17 16:54
+ * @version 1.0
+ */
 public class LoggingHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
